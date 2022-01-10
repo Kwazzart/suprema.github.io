@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/menu.css">
     <title>jsLesson</title>
 </head>
 <body>
-    <h1>Это заголовок h1</h1>
+    <h1 class="title">Это заголовок h1</h1>
     <div id = "mega" class="block-1">
         <p>Это красный div элемент</p>
     </div>
@@ -19,6 +20,58 @@
             <li>Третий</li>
         </ul>
     </div>
+    <div class="grandparent">
+        <div class="parent">
+            <div class="child">
+
+            </div>
+        </div>
+    </div>
+    <label><input id="one" type="checkbox" onchange="fun1()">True-False</label>
+    <label><input id="one2" type="checkbox">True-False</label>
+    <label><input id="two" type="radio" onclick="fun2()">Radio-button</label>
+    <div class="flex-buttons">
+        <input type="radio" name="r1" value="1">1
+        <input type="radio" name="r1" value="2">2
+        <input type="radio" name="r1" value="3">3
+        <button onclick="funButtons()">Проверить</button>
+    </div>
+    <div class="buttons">
+        <button id="smart-button" value="0" onclick="addValue(3)"></button>
+        <button id = "mimic-button" value="0"></button>
+    </div>
+    <select name="" id="mySelect" onchange="selectedIndexGet()">
+        <option value="">Стиль мамонта</option>
+        <option value="">Стиль обезьяны</option>
+        <option value="">Стиль пунды</option>
+        <option value="">Стиль стиля</option>
+    </select>
+    <div>
+        <input type="range" min="0" max="100" step="1" id="ra1" onmouseup="printRangeValue()">
+        <input type="range" min="0" max="100" step="1" id="ra2">
+    </div>
+    <input type="range" min="0" max="50" step="1" id="contrl1" oninput="changeBorderRadius()">BR-top
+    <input type="range" min="0" max="50" step="1" id="contrl2" oninput="changeBorderRadius()">BR-right
+    <input type="range" min="0" max="50" step="1" id="contrl3" oninput="changeBorderRadius()">BR-bottom
+    <input type="range" min="0" max="50" step="1" id="contrl4" oninput="changeBorderRadius()">BR-left
+    <div id="inter-block"></div>
+    <div id ="nav">
+        <div class="menu-item">
+            Меню-1
+            <div class="submenu">Подменю1</div>
+        </div>
+        <div class="menu-item">
+            Меню-2
+            <div class="submenu">Подменю2</div>
+        </div>
+        <div class="menu-item">
+            Меню-3
+            <div class="submenu">Подменю3</div>
+            <div class="submenu">Подменю3</div>
+        </div>
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="js/cssGenerator.js"></script>
     <script src = "js/main.js"></script>
 </body>
 </html>

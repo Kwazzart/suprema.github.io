@@ -14,14 +14,64 @@ h1{
 
 .block-1{
     background-color: red;
-    width: 270px;
+    width: 370px;
     padding: 10px;
     margin: 10px;
 }
 .block-2{
-    width: 300px;
+    width: 400px;
     background-color: black;
     color: white;
     margin: 10px;
     text-align: center;
+}
+.title{
+    font-size: 90px;
+}
+
+.grandparent{
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    position: relative;
+}
+.parent{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    top: 25%;
+    left: 25%;
+}
+.child{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    position: absolute;
+    top: 33%;
+    left: 33%;
+}
+label{
+    display: block;
+}
+
+#smart-button{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: black;
+    margin: 40px 40px;
+    text-align: center;
+    font-size: 49px;
+    display: inline-block;
+}
+#mimic-button{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    color: black;
+    text-align: center;
+    font-size: 49px;
+    display: inline-block;
 }
